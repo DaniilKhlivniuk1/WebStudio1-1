@@ -353,15 +353,15 @@ body {
 
 .service-subtitle {
   color: var(--white-color);
-font-size: 14px;
-font-weight: 700;
-letter-spacing: 0.42px;
-text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
 .service-image {
   width: 370px;
-height: 294px;
+  height: 294px;
 }
 
 .service-item {
@@ -372,11 +372,11 @@ height: 294px;
   position: absolute;  
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
-height: 70px;
-bottom: 0;
-left: 0;
-z-index: 2;
-padding: 27px 107px;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 27px 107px;
 }
 
 .service-item:nth-child(2) .service-bg{

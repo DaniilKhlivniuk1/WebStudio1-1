@@ -620,45 +620,43 @@ padding: 27px 107px;
     cursor: pointer;
     outline: none;
 }
-
-
-.specification {
-    padding: 94px 0;
+.features {
+  padding: 94px 0;
 }
 
-.specification-list {
-    display: flex;
-    gap: 30px;
+.features-list {
+  display: flex;
+  gap: 30px;
 }
 
-.specification-title {
-    margin-bottom: 10px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+.features-title {
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
-.specification-text {
-    color: var(--secondary-color);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171.429%;
-    letter-spacing: 0.42px;
+.features-text {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
+  letter-spacing: 0.42px;
 }
 
-.specification-wrap {
-    width: 270px;
-    height: 120px;
-    background-color: rgba(245, 244, 250, 1);
-    border-radius: 4px;
-    text-align: center;
-    padding-top: 25px;
-    margin-bottom: 30px;
+.features-wrap {
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 30px;
 }
 
-.specification-icon {
-    width: 70px;
-    height: 70px;
+.features-icon {
+  width: 70px;
+  height: 70px;
 }

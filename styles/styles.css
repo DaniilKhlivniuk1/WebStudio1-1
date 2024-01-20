@@ -333,16 +333,16 @@ body {
 
 
 
-.specialties {
+.service {
   padding-bottom: 94px;
 }
 
-.specialties-list {
+.service-list {
   display: flex;
   gap: 30px;
 }
 
-.specialties-title {
+.service-title {
   color: var(--text-color);
   text-align: center;
   font-size: 36px;
@@ -351,41 +351,42 @@ body {
   margin-bottom: 50px;
 }
 
-.specialties-subtitle {
+.service-subtitle {
   color: var(--white-color);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
 }
 
-.specialties-image {
+.service-image {
   width: 370px;
-  height: 294px;
+height: 294px;
 }
 
-.specialties-item {
+.service-item {
   position: relative;
 }
 
-.specialties-baground {
+.service-bg {
   position: absolute;  
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
-  height: 70px;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  padding: 27px 107px;
+height: 70px;
+bottom: 0;
+left: 0;
+z-index: 2;
+padding: 27px 107px;
 }
 
-.specialties-item:nth-child(2) .service-bg{
+.service-item:nth-child(2) .service-bg{
   padding: 27px 111px;
 }
 
-.specialties-item:nth-child(3) .service-bg{
+.service-item:nth-child(3) .service-bg{
   padding: 27px 93px;
 }
+
 
 
 .team {

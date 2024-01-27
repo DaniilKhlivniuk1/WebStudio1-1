@@ -95,6 +95,10 @@ body {
 }
 
 
+.is-hidden {
+  opacity: 0;
+  z-index: -1;
+}
 .company-link {
     display: block;
     border-radius: 4px;

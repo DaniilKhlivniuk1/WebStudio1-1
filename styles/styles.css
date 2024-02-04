@@ -10,6 +10,13 @@
 }
 
 
+
+.container {
+    margin-right: auto;
+  padding: 0 15px;
+  width: 1200px;
+  margin-left: auto;
+}
 .development-texthover {
     color: var(--white-color);  
     font-size: 18px;
@@ -33,6 +40,10 @@
     display: flex;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Roboto";
 }
 
 .development-article {
@@ -79,7 +90,9 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .development-text {
     color: var(--text-color);
     font-size: 18px;

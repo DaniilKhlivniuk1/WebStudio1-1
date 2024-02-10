@@ -1,186 +1,31 @@
 :root {
     --secondary-color: rgba(117, 117, 117, 1);
+    --black-color: #000;
     --text-color: rgba(33, 33, 33, 1);
+    --lightwhite-color: rgba(255, 255, 255, 0.6);
+    --st-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --highlight-color: rgba(33, 150, 243, 1);
     --background-color: rgba(47, 48, 58, 1);
     --white-color: rgba(255, 255, 255, 1);
-    --black-color: #000;
-    --lightwhite-color: rgba(255, 255, 255, 0.6);
-    --st-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: "Roboto";
-  }
-  
-  .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    /* outline: dotted red; */
-  }
-  
-  .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-  
-  .header-wrap {
-    display: flex;
-  }
-  
-  .header-logo1 {
-    color: var(--highlight-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-  }
-  
-  .header-logo2 {
-    color: var(--black-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-  }
   
   .footer-logo1 {
     color: var(--highlight-color);
-    font-family: Raleway;
-    font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
+    font-family: Raleway;
+    font-size: 26px;
   }
   
   .footer-logo2 {
     color: var(--white-color);
-    font-family: Raleway;
-    font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
+    font-family: Raleway;
+    font-size: 26px;
   }
   
-  .header-list {
-    margin-left: 93px;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-  }
-  
-  .header-infolist {
-    margin-left: auto;
-    display: flex;
-    gap: 30px;
-  }
-  
-  .header-infoitem {
-    display: flex;
-    gap: 10px;
-    padding-top: 8px;
-    flex-direction: row-reverse;
-    transition: fill var(--st-animation);
-  }
-  
-  .header-infoitem:hover .header-icon {
-    fill: var(--highlight-color);
-    cursor: pointer;
-  }
-  
-  .header-infoitem:hover .header-info {
-    fill: var(--highlight-color);
-    color: var(--highlight-color);
-    cursor: pointer;
-  }
-  
-  .header-icons {
-    width: 16px;
-    height: 16px;
-    fill: rgba(117, 117, 117, 1);
-    transition: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .header-link {
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    position: relative;
-    transition: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .header-link:hover {
-    color: var(--highlight-color);
-  }
-  
-  .header-link:focus {
-    color: var(--highlight-color);
-    outline: none;
-  }
-  
-  .header-link::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: var(--highlight-color);
-    border-radius: 2px;
-    position: absolute;
-    top: 44px;
-    left: 0;
-    opacity: 0;
-    transition: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .header-link:hover::after {
-    opacity: 1;
-  }
-  
-  .index:hover .header-item:nth-child(1) .header-link::after {
-    opacity: 1;
-  }
-  
-  .index:hover .header-item:nth-child(1) .header-link {
-    color: var(--highlight-color);
-  }
-  
-  .portfolio:hover .header-item:nth-child(2) .header-link::after {
-    opacity: 1;
-  }
-  
-  .portfolio:hover .header-item:nth-child(2) .header-link {
-    color: var(--highlight-color);
-  }
-  
-  .header-info {
-    color: var(--secondary-color);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    transition: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .header-info:focus {
-    color: var(--highlight-color);
-    outline: none;
-  }
-  
-  .header-info:focus-within ~ .header-icons {
-    fill: var(--highlight-color);
-  }
   
   .idea {
     max-width: 1600px;
@@ -195,34 +40,34 @@
   }
   
   .idea-title {
-    max-width: 696px;
-    color: var(--white-color);
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136.364%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    max-width: 696px;
+    color: var(--white-color);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 136.364%;
   }
   
   .idea-button {
     border-radius: 4px;
-    background: var(--highlight-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--white-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
     line-height: 187.5%;
     letter-spacing: 0.96px;
+    background: var(--highlight-color);
     margin-top: 30px;
     padding: 10px 32px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
   }
   
 
@@ -238,10 +83,10 @@
   .features-title {
     margin-bottom: 10px;
     color: var(--text-color);
-    font-size: 14px;
-    font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
   }
   
   .features-text {
@@ -253,13 +98,13 @@
   }
   
   .features-wrap {
-    width: 270px;
-    height: 120px;
     background-color: rgba(245, 244, 250, 1);
     border-radius: 4px;
     text-align: center;
     padding-top: 25px;
     margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
   }
   
   .features-icon {
@@ -320,6 +165,21 @@
   .service-item:nth-child(3) .service-bg{
     padding: 27px 93px;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Roboto";
+  }
+  
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    padding: 0 15px;
+    margin-right: auto;
+
+  }
   
   .team {
     padding: 94px 0;
@@ -377,14 +237,14 @@
   
   .soc-item {
     width: 44px;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     height: 44px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .soc-item:hover {
@@ -414,12 +274,12 @@
   }
   
   .soc-icon {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 20px;
     height: 20px;
     fill: rgba(175, 177, 184, 1);
     transition: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .clients {
@@ -428,11 +288,12 @@
   
   .clients-title {
     color: var(--text-color);
-    text-align: center;
-    font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+
   }
   
   .clients-list {
@@ -451,11 +312,11 @@
     display: block;
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    width: 170px;
-    height: 92px;
     transition: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 170px;
+    height: 92px;
   }
   
   .company-link:hover {
@@ -564,14 +425,14 @@
     width: 358px;
   height: 50px;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.30);
-  background: rgba(33, 150, 243, 0.00);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 15px 16px;
   color: var(--white-color);
   transition: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   
   .footer-input:hover {
@@ -595,10 +456,6 @@
     color: var(--white-color);
   font-size: 16px;
   font-weight: 700;
-  line-height: 187.5%;
-  letter-spacing: 0.96px;
-  width: 200px;
-  height: 50px;
   border-radius: 4px;
   background: var(--highlight-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -606,6 +463,10 @@
   align-items: center;
   gap: 10px;
   padding: 10px 28px;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
   }
   
   .footer-btn:hover {
@@ -639,8 +500,6 @@
     padding: 6px 22px;
     border-radius: 4px;
     background: #f5f4fa;
-    color: var(--text-color);
-    text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 162.5%;
@@ -648,6 +507,8 @@
     transition: background, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-color);
+    text-align: center;
   }
   
   .filters-button:hover {
@@ -685,10 +546,10 @@
   .development-text {
     color: var(--text-color);
     font-size: 18px;
-    font-weight: 700;
     line-height: 200%;
     letter-spacing: 1.08px;
     margin-bottom: 4px;
+    font-weight: 700;
   }
   .development-photo {
     width: 370px;
@@ -742,16 +603,16 @@
     top: 0;
     left: 0;
     position: absolute;
+    align-items: center;
+  opacity: 0;
+  transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 370px;
   height: 294px;
   background: rgba(33, 150, 243, 0.90);
   display: flex;
   justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .link-to-article:hover .developments-hover {
@@ -766,9 +627,6 @@
   .backdrop {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.20);
-    position: fixed;
-    top: 0;
     right: 0;
     display: flex;
     justify-content: center;
@@ -776,29 +634,28 @@
     transition: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(0, 0, 0, 0.20);
+    position: fixed;
+    top: 0;
   }
   
   .modal {
     width: 528px;
-  height: 581px;
-  border-radius: 4px;
-  background: var(--white-color);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  /* z-index: 4; */
   position: relative;
   padding: 40px;
   transition: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 581px;
+  border-radius: 4px;
+  background: var(--white-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  /* z-index: 4; */
   }
   
   .close-circle {
     background-color: transparent;
     width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: solid 1px rgba(0, 0, 0, 0.10); 
-    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -807,6 +664,10 @@
     transition: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px rgba(0, 0, 0, 0.10); 
+    display: flex;
   }
   
   .close-circle:hover {
@@ -875,17 +736,17 @@
   .modal-comment {
     min-width: 448px;
   min-height: 120px;
+  font-weight: 400;
+  outline: none;
+  transition: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.20);
   padding: 12px;
   resize: none;
   font-size: 12px;
   letter-spacing: 0.12px;
-  font-weight: 400;
-  outline: none;
-  transition: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .modal-comment:hover, .modal-comment:focus {
@@ -944,9 +805,6 @@
     padding: 10px 52px;
     color: var(--white-color);
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 187.5%;
   letter-spacing: 0.96px;
   border-radius: 4px;
   background: var(--highlight-color);
@@ -956,6 +814,9 @@
   margin-left: auto;
   margin-top: 30px;
   }
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
   
   .modal-btn:hover {
     cursor: pointer;
@@ -980,11 +841,6 @@
   .scroll-to-top {
     width: 94px;
     height: 94px;
-    background: rgb(245, 244, 250);
-    border: solid var(--text-color) 1px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     position: fixed;
     bottom: 25px;
@@ -993,6 +849,11 @@
     transition: box-shadow, background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgb(245, 244, 250);
+    border: solid var(--text-color) 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
   }
   
   .scroll-to-top:hover {
@@ -1024,3 +885,143 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  
+  .header-wrap {
+    display: flex;
+  }
+  
+  .header-logo1 {
+    color: var(--highlight-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
+  
+  .header-logo2 {
+    color: var(--black-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
+.header-list {
+    margin-left: 93px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .header-infolist {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .header-infoitem {
+    display: flex;
+    gap: 10px;
+    padding-top: 8px;
+    flex-direction: row-reverse;
+    transition: fill var(--st-animation);
+  }
+  
+  .header-infoitem:hover .header-icon {
+    fill: var(--highlight-color);
+    cursor: pointer;
+  }
+  
+  .header-infoitem:hover .header-info {
+    fill: var(--highlight-color);
+    color: var(--highlight-color);
+    cursor: pointer;
+  }
+  
+  .header-icons {
+    width: 16px;
+    height: 16px;
+    fill: rgba(117, 117, 117, 1);
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header-link {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    position: relative;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header-link:hover {
+    color: var(--highlight-color);
+  }
+  
+  .header-link:focus {
+    color: var(--highlight-color);
+    outline: none;
+  }
+  
+  .header-link::after {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    opacity: 0;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--highlight-color);
+    border-radius: 2px;
+  }
+  
+  .header-link:hover::after {
+    opacity: 1;
+  }
+  
+  .index:hover .header-item:nth-child(1) .header-link::after {
+    opacity: 1;
+  }
+  
+  .index:hover .header-item:nth-child(1) .header-link {
+    color: var(--highlight-color);
+  }
+  
+  .portfolio:hover .header-item:nth-child(2) .header-link::after {
+    opacity: 1;
+  }
+  
+  .portfolio:hover .header-item:nth-child(2) .header-link {
+    color: var(--highlight-color);
+  }
+  
+  .header-info {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header-info:focus {
+    color: var(--highlight-color);
+    outline: none;
+  }
+  
+  .header-info:focus-within ~ .header-icons {
+    fill: var(--highlight-color);
+  }
+  

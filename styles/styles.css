@@ -626,8 +626,10 @@
     width: 528px;
   position: relative;
   padding: 40px;
-  transform: rotate(360deg);
-  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(180deg);
+  transition: transform 2s cubic-bezier(1,.07,.28,.89)
+  transform: skew(10, 70)
+  transform: translate(-50%, -50%);
   height: 581px;
   border-radius: 4px;
   background: var(--white-color);

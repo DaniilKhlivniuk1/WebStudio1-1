@@ -623,7 +623,7 @@
   }
   
   .modal {
-    width: 528px;
+  width: 528px;
   position: relative;
   padding: 40px;
   transform: rotate(180deg);

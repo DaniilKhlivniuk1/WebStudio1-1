@@ -861,10 +861,10 @@
     transform: rotate(90deg);
     transition: fill var(--st-animation);
   }
+
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
-
   }
 
   

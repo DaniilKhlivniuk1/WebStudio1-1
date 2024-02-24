@@ -862,11 +862,21 @@
     transition: fill var(--st-animation);
   }
 
-  .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  animation-name: header-move;
+  animation-duration: 2s;
+}
 
+@keyframes header-move {
+  0% {
+    transform: translate(0, -200px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
   
   .header-logo1 {
     color: var(--highlight-color);

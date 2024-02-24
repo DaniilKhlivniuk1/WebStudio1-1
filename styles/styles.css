@@ -864,20 +864,9 @@
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    animation-duration: 2s;
-    animation-name: header-move;
+
   }
 
-  @keyframes header-move {
-  0% {
-    transform: translate(0, -200px);
-  }
-  100% {
-    transform: translate(0);
-  }
-  .header-wrap {
-    display: flex;
-  }
   
   .header-logo1 {
     color: var(--highlight-color);

@@ -43,9 +43,11 @@
 @keyframes idea-bg {
   0% {
     opacity: 0;
+    transform: translate(0, -200px);
   }
   100% {
-    opacity: 1;
+    opacity: 2;
+    transform: translate(0);
   }
 }
 
@@ -66,12 +68,12 @@
 
 @keyframes idea-move {
   0% {
-    transform: translate(1100px, -350px);
+    transform: translate(-1000px, -300px) rotate(720deg);
     opacity: 0;
   }
   100% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 2;
   }
 }
 .idea-button {
@@ -96,12 +98,12 @@
 
 @keyframes idea-button-move {
   0% {
-    transform: translate(-1100px, -350px);
+    transform: translate(2100px, -400px);
     opacity: 0;
   }
   100% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 2;
   }
 }
   
@@ -526,12 +528,80 @@ body {
     font-weight: 500;
     line-height: 162.5%;
     letter-spacing: 0.48px;
-    transition: background, color, box-shadow;
+    transition: background, color, box-shadow, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--text-color);
+    animation-duration: 3s;
     text-align: center;
   }
+
+@keyframes filters-move-1 {
+  0% {
+    transform: translate(-1000px, -400px)
+
+  }
+  50% {
+    transform: translate(-400px, 30px);
+    color: var(--white-color);
+  }
+  100% {
+    transform: translate(0);
+
+  }
+}
+
+@keyframes filters-move-2 {
+  0% {
+    transform: translate(100px, -500px);
+  }
+  50% {
+    transform: translate(100px, -120px) rotate(360deg);
+    color: var(--white-color);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes filters-move-3 {
+  0% {
+    transform: translate(1500px, 500px));
+  }
+  50% {
+    transform: translate(500px, -60px) rotate(450deg);
+    color: var(--white-color);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes filters-move-4 {
+  0% {
+    transform: translate(-1500px, 0) rotate(720deg);;
+  }
+  50% {
+    transform: translate(-300px, 0);
+    color: var(--white-color);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes filters-move-5 {
+  0% {
+    transform: translate(1500px, 0);
+  }
+  50% {
+    transform: translate(200px, 0) rotate(90deg);
+    color: var(--white-color);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
   
   .filters-button:hover {
     background: var(--highlight-color);
@@ -549,6 +619,26 @@ body {
     cursor: pointer;
     outline: none;
   }
+
+.filters-item:nth-child(1) .filters-button {
+  animation-name: filters-move-1;
+}
+
+.filters-item:nth-child(2) .filters-button {
+  animation-name: filters-move-2;
+}
+
+.filters-item:nth-child(3) .filters-button {
+  animation-name: filters-move-3;
+}
+
+.filters-item:nth-child(4) .filters-button {
+  animation-name: filters-move-4;
+}
+
+.filters-item:nth-child(5) .filters-button {
+  animation-name: filters-move-5;
+}
   
   .development {
     padding-bottom: 94px;
@@ -861,13 +951,24 @@ body {
     right: 25px;
     z-index: 2;
     transition: box-shadow, background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background: rgb(245, 244, 250);
     border: solid var(--text-color) 1px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    animation-name: scroll-to-top-move;
+    animation-duration: 3s;
+  }
+@keyframes scroll-to-top-move {
+  0% {
+    transform: translate(-1100px, -350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
   }
   
   .scroll-to-top:hover {
@@ -908,7 +1009,7 @@ body {
 
 @keyframes header-move {
   0% {
-    transform: translate(0, -200px);
+    transform: translate(0, -300px);
   }
   100% {
     transform: translate(0);

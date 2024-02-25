@@ -1,0 +1,84 @@
+.idea {
+    max-width: 1600px;
+    padding: 200px 0;
+    animation-name: idea-bg;
+    animation-duration: 2.5s;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/offer-bg.webp);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  
+  @keyframes idea-bg {
+    0% {
+      opacity: 0;
+      transform: translate(0, -200px);
+    }
+  
+    100% {
+      opacity: 2;
+      transform: translate(0);
+    }
+  }
+  
+  .idea-title {
+    max-width: 696px;
+    color: var(--white-color);
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: idea-move;
+    animation-duration: 1.6s;
+    font-weight: 900;
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+  }
+  
+  @keyframes idea-move {
+    0% {
+      transform: translate(-1000px, -300px) rotate(720deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(0);
+      opacity: 2;
+    }
+  }
+  
+  .idea-button {
+    border-radius: 4px;
+    background: var(--highlight-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+    letter-spacing: 0.96px;
+    margin-top: 30px;
+    padding: 10px 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    animation-name: idea-button-move;
+    animation-duration: 1.6s;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 187.5%;
+  }
+  
+  @keyframes idea-button-move {
+    0% {
+      transform: translate(2100px, -400px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(0);
+      opacity: 2;
+    }
+  }
+  

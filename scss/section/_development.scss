@@ -1,0 +1,95 @@
+.development {
+    padding-bottom: 94px;
+  }
+  
+  .development-wrap {
+    padding: 20px 24px;
+    border: 1px solid #eee;
+  }
+  
+  .development-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .development-text {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+  
+  .development-photo {
+    width: 370px;
+    height: 294px;
+  }
+  
+  .development-to-article {
+    transition: box-shadow var(--st-animation);
+  }
+  
+  .link-to-article:hover .development-to-article {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .link-to-article:focus {
+    outline: none;
+  }
+  
+  .link-to-article:focus .development-to-article {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  
+  }
+  
+  .development-part {
+    flex-basis: calc((100% - 60px) \3);
+  }
+  
+  .development-inscription {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 187.5%;
+    letter-spacing: 0.48px;
+  }
+  
+  .projects-hover-position {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .development-texthover {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155.556%;
+    letter-spacing: 0.54px;
+    max-width: 322px;
+  }
+  
+  .developments-hover {
+    top: 294px;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    transition: transform var(--st-animation);
+    width: 370px;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.90);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .link-to-article:hover .developments-hover {
+    transform: translate(0, -294px);
+  }
+  
+  .link-to-article:focus .developments-hover {
+    opacity: 1;
+  }
+  

@@ -20,7 +20,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
 <link rel="stylesheet" href="./style/main.min.css">
+=======
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header class="header" id="header">
@@ -96,7 +100,7 @@
         <div class="container">
           <h1 hidden>projects</h1>
           <ul class="development-options">
-            <li class="development-part">
+            <li class="development-part" data-aos="zoom-in">
               <a href="" class="link-to-article">
                 <article class="development-article">
                   <div class="projects-hover-position">
@@ -121,7 +125,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                     <div class="projects-hover-position">
@@ -149,7 +153,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="zoom-out-left">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -174,7 +178,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="zoom-in-right">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -198,7 +202,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="zoom-in-down">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -223,7 +227,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="zoom-in-up">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -256,7 +260,7 @@
 
             </li>
 
-            <li class="development-part">
+            <li class="development-part" data-aos="flip-down">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -281,7 +285,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="flip-up">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -306,7 +310,7 @@
                 </article>
               </a>
             </li>
-            <li class="development-part">
+            <li class="development-part" data-aos="flip-left">
               <a href="" class="link-to-article">
                 <article class="development-to-article">
                   <div class="projects-hover-position">
@@ -363,7 +367,7 @@
 
 
         
-        <div class="footer-soc">
+        <div class="footer-soc" data-aos="fade-up" data-aos-duration="3000">
           <h4 class="footer-title">приєднуйтесь</h4>
           <ul class="soc-list">
             <li class="soc-item footer-soc-item">
@@ -400,7 +404,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
+        <div class="footer-subscribe" data-aos="zoom-out-left">
           <h4 class="footer-title">Підпишіться на розсилку</h4>
           <form action="" class="footer-form">
             <input type="email" class="footer-input" placeholder="E-mail" required>
@@ -409,5 +413,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+@import url(./base/common.scss);
+@import url(./base/container.scss);
+@import url(./base/vars.scss);
+@import url(./base/reset.scss);
+@import url(./section/header.scss);
+@import url(./section/idea.scss);
+@import url(./section/features.scss);
+@import url(./section/service.scss);
+@import url(./section/team.scss);
+@import url(./section/clients.scss);
+@import url(./section/footer.scss);
+@import url(./section/filters.scss);
+@import url(./section/development.scss);
+@import url(./section/modal.scss);/*# sourceMappingURL=main.css.map */

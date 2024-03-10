@@ -34,17 +34,17 @@
     border-radius: 4px;
   }
 
-  .company-logo:hover {
+  .company_logo:hover {
     fill: var(--highlight-color);
   }
   
   
-  .company-link:focus{
+  .company_link:focus{
     outline: none;
   }
   
   
-  .company-logo {
+  .company_logo {
     fill: rgba(175, 177, 184, 1);
     transition: fill var(--st-animation);
     width: 170px;

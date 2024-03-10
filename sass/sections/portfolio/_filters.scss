@@ -67,7 +67,7 @@
 
 
   
-  @keyframes filters-move-1 {
+  @keyframes filters__move__1 {
     0% {
       opacity: 0;
       transform: translate(-1100px, -400px) rotate(720deg);
@@ -92,7 +92,7 @@
     }
   }
   
-  @keyframes filters-move-2 {
+  @keyframes filters__move__2 {
     0% {
       transform: translate(200px, -600px) rotate(720deg);
       opacity: 0;
@@ -115,7 +115,7 @@
     }
   }
   
-  @keyframes filters-move-3 {
+  @keyframes filters__move__3 {
     0% {
       opacity: 0;
       transform: translate(1600px, 600px) rotate(1080deg);
@@ -138,7 +138,7 @@
     }
   }
   
-  @keyframes filters-move-4 {
+  @keyframes filters__move__4 {
     0% {
       transform: translate(-1700px, 0);
       opacity: 0;
@@ -159,7 +159,7 @@
     }
   }
   
-  @keyframes filters-move-5 {
+  @keyframes filters__move__5 {
     0% {
       transform: translate(1600px, 0) rotate(550deg);
       opacity: 0;

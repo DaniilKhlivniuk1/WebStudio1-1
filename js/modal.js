@@ -13,8 +13,3 @@
       document.body.classList.toggle("no-scroll");
     }
   })();
-<<<<<<< HEAD
-  
-=======
-  
->>>>>>> 520b0c2b4721414abb59c0900a70ec9eaf8b0395

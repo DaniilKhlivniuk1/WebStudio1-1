@@ -831,11 +831,8 @@ body {
 .footer__info:hover {
   color: rgb(33, 150, 243);
 }
+
 .footer__info:focus {
   color: rgb(33, 150, 243);
   outline: none;
 }
-<<<<<<< HEAD
-=======
- 
->>>>>>> 520b0c2b4721414abb59c0900a70ec9eaf8b0395

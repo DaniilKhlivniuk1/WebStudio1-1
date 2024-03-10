@@ -1,37 +1,37 @@
 
-.is-hidden .modal {
+.is__hidden .modal {
   transform: rotate(780deg) scale(15);
 }
 
-.is-hidden {
+.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-checkbox {
+.modal__checkbox {
   width: 16px;
   height: 16px;
 }
 
-.modal-checkbox {
+.modal__checkbox {
   cursor: pointer;
 }
 
-.modal-list {
+.modal__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.modal-wrap {
+.modal__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
 }
 
-.modal-text {
+.modal__text {
   color: var(--secondary-color);
   font-size: 14px;
   font-weight: 400;
@@ -40,7 +40,7 @@
 }
 
 
-.close-circle {
+.close__circle {
   background-color: transparent;
   width: 30px;
   height: 30px;
@@ -55,16 +55,16 @@
   transition: fill var(--st-animation);
 }
 
-.close-circle:hover {
+.close__circle:hover {
   fill: var(--highlight-color);
   cursor: pointer;
 }
 
-.close-circle:focus {
+.close__circle:focus {
   fill: var(--highlight-color);
 }
 
-.modal-title {
+.modal__title {
   color: var(--text-color);
   text-align: center;
   font-size: 20px;
@@ -73,7 +73,7 @@
   margin-bottom: 12px;
 }
 
-.modal-label {
+.modal__label {
   display: block;
   color: var(--secondary-color);
 
@@ -149,7 +149,7 @@
 
 }
 
-.modal-input {
+.modal__input {
   width: 448px;
   }
   
@@ -164,29 +164,29 @@
   transition: border-color var(--st-animation);
 }
 
-.modal-icon {
+.modal__icon {
   transition: fill var(--st-animation);
 }
 
-.modal-input:hover {
+.modal__input:hover {
   border-color: var(--highlight-color);
   cursor: pointer;
 }
 
-.modal-input:hover~.modal-icon {
+.modal__input:hover~.modal__icon {
   fill: var(--highlight-color);
 }
 
-.modal-input:focus {
+.modal__input:focus {
   border-color: var(--highlight-color);
   cursor: pointer;
 }
 
-.modal-input:focus~.modal-icon {
+.modal__input:focus~.modal__icon {
   fill: var(--highlight-color);
 }
 
-.modal-comment {
+.modal__comment {
   min-width: 448px;
   transition: border-color $st-animation;
   }
@@ -228,40 +228,40 @@
   transition: border-color var(--st-animation);
 }
 
-.modal-comment:hover,
-.modal-comment:focus {
+.modal__comment:hover,
+.modal__comment:focus {
   border-color: var(--highlight-color);
   cursor: pointer;
 }
 
 
-.modal-btn:hover {
+.modal__btn:hover {
   cursor: pointer;
 }
 
-.modal-item {
+.modal__item {
   position: relative;
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 29px;
   left: 12px;
 }
 
-.modal-close {
+.modal__close {
   transform: rotate(390deg);
   transition: fill var(--st-animation);
 }
 
-.modal-comment::placeholder {
+.modal__comment::placeholder {
   color: rgba(117, 117, 117, 0.50);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
 }
 
-.modal-link {
+.modal__link {
   color: var(--highlight-color);
 
   transition: border-color $st-animation;
@@ -322,7 +322,7 @@
 
 }
 
-.modal-btn {
+.modal__btn {
   padding: 10px 52px;
   color: var(--white-color);
 
@@ -393,12 +393,12 @@
  
   }
   
-  .is-hidden .modal {
+  .is__hidden .modal {
     /* transform: translate(0); */
     transform: rotate(720deg) scale(15);
   }
   
-  .is-hidden {
+  .is__hidden {
     opacity: 0;
     pointer-events: none;
     /* visibility: hidden; */

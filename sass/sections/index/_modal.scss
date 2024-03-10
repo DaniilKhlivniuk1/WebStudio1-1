@@ -32,7 +32,7 @@
 }
 
 .modal__text {
-  color: var(--secondary-color);
+  color: $secondary-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 171.429%;
@@ -52,20 +52,20 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  transition: fill var(--st-animation);
+  transition: fill $st-animation;
 }
 
 .close__circle:hover {
-  fill: var(--highlight-color);
+  fill: $highlight-color;
   cursor: pointer;
 }
 
 .close__circle:focus {
-  fill: var(--highlight-color);
+  fill: $highlight-color;
 }
 
 .modal__title {
-  color: var(--text-color);
+  color: $text-color;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -75,7 +75,7 @@
 
 .modal__label {
   display: block;
-  color: var(--secondary-color);
+  color: $secondary-color;
 
 .backdrop {
     width: 100%;
@@ -161,29 +161,29 @@
   padding: 11px 12px 11px 40px;
   outline: none;
 
-  transition: border-color var(--st-animation);
+  transition: border-color $st-animation;
 }
 
 .modal__icon {
-  transition: fill var(--st-animation);
+  transition: fill $st-animation);
 }
 
 .modal__input:hover {
-  border-color: var(--highlight-color);
+  border-color: $st-animation);
   cursor: pointer;
 }
 
 .modal__input:hover~.modal__icon {
-  fill: var(--highlight-color);
+  fill: $highlight-color
 }
 
 .modal__input:focus {
-  border-color: var(--highlight-color);
+  border-color: $highlight-color;
   cursor: pointer;
 }
 
 .modal__input:focus~.modal__icon {
-  fill: var(--highlight-color);
+  fill: $highlight-color);
 }
 
 .modal__comment {
@@ -225,12 +225,12 @@
   font-weight: 400;
   outline: none;
 
-  transition: border-color var(--st-animation);
+  transition: border-color $st-animation;
 }
 
 .modal__comment:hover,
 .modal__comment:focus {
-  border-color: var(--highlight-color);
+  border-color: $highlight-color;
   cursor: pointer;
 }
 
@@ -251,7 +251,7 @@
 
 .modal__close {
   transform: rotate(390deg);
-  transition: fill var(--st-animation);
+  transition: $st-animation;
 }
 
 .modal__comment::placeholder {
@@ -262,7 +262,7 @@
 }
 
 .modal__link {
-  color: var(--highlight-color);
+  color: $highlight-color;
 
   transition: border-color $st-animation;
 
@@ -324,7 +324,7 @@
 
 .modal__btn {
   padding: 10px 52px;
-  color: var(--white-color);
+  color: $white-color;
 
   }
   
@@ -337,7 +337,7 @@
   line-height: 187.5%;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--highlight-color);
+  background: $highlight-color;
   background: $highlight-color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: block;
@@ -357,14 +357,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity var(--st-animation);
+  transition: opacity$st-animation;
 }
 
 .modal {
   width: 528px;
   height: 581px;
   border-radius: 4px;
-  background: var(--white-color);
+  background: $white-color;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   position: relative;
   padding: 40px;

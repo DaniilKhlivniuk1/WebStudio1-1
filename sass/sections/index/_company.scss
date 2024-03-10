@@ -35,7 +35,7 @@
   }
 
   .company__logo:hover {
-    fill: var(--highlight-color);
+    fill: $highlight-color;
   }
   
   
@@ -46,7 +46,7 @@
   
   .company__logo {
     fill: rgba(175, 177, 184, 1);
-    transition: fill var(--st-animation);
+    transition: fill $st-animation;
     width: 170px;
     height: 92px;
   }

@@ -17,7 +17,7 @@ animation-duration: 1s;
 
 
 
-&:focus-visible .modal-close{
+&:focus_visible .modal__close{
   fill: $white-color;
 }
 
@@ -32,7 +32,7 @@ animation-duration: 1s;
   transition: fill var(--st-animation);
 }
 
-@keyframes scroll-to-top-move {
+@keyframes scroll__to__top__move {
   0% {
     bottom: -165px;
     background-color: $highlight-color;

@@ -154,7 +154,7 @@ body {
   fill: rgb(33, 150, 243);
 }
 
-@keyframes header-move {
+@keyframes header__move {
   0% {
     transform: translate(0, -300px);
     opacity: 0;
@@ -192,7 +192,7 @@ body {
   border: none;
   outline: none;
 }
-.scrolltop:focus-visible .modal-close {
+.scrolltop:focus-visible .modal__close {
   fill: rgb(255, 255, 255);
 }
 
@@ -205,7 +205,7 @@ body {
   transition: fill var(--st-animation);
 }
 
-@keyframes scroll-to-top-move {
+@keyframes scroll__to__top__move {
   0% {
     bottom: -95px;
     opacity: 0;
@@ -362,7 +362,7 @@ body {
   outline: none;
 }
 
-@keyframes filters-move-1 {
+@keyframes filters__move__1 {
   0% {
     transform: translate(-1300px, -400px) rotate(780deg);
     opacity: 0;
@@ -378,7 +378,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes filters-move-2 {
+@keyframes filters__move__2 {
   0% {
     transform: translate(200px, -600px) rotate(369deg);
     opacity: 0;
@@ -394,7 +394,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes filters-move-3 {
+@keyframes filters__move__3 {
   0% {
     transform: translate(1600px, 600px) rotate(1090deg);
     opacity: 0;
@@ -410,7 +410,7 @@ body {
     opacity: 0.1;
   }
 }
-@keyframes filters-move-4 {
+@keyframes filters__move__4 {
   0% {
     transform: translate(-1500px, 0);
     opacity: 0;
@@ -426,7 +426,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes filters-move-5 {
+@keyframes filters__move__5 {
   0% {
     transform: translate(1500px, 0) rotate(480deg);
     opacity: 0;

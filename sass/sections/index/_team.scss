@@ -1,31 +1,31 @@
 
-.soc-item:hover {
+.soc__item:hover {
   background-color: var(--highlight-color);
 }
 
-.soc-item:hover .soc-icon {
+.soc__item:hover .soc__icon {
   fill: var(--white-color); 
 }
 
-.soc-item:focus-within {
+.soc__item:focus__within {
   background-color: var(--highlight-color);
   outline: none;
 }
 
-.soc-item:focus-within .soc-icon {
+.soc__item:focus__within .soc__icon {
   fill: var(--white-color); 
 }
 
-.soc-item:focus {
+.soc__item:focus {
   outline: none;
 }
 
-.soc-link {
+.soc__link {
   width: 20px;
   height: 20px;
 }
 
-.soc-icon {
+.soc__icon {
   width: 20px;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
@@ -36,7 +36,7 @@
   padding: 94px 0;
 }
 
-.clients-title {
+.clients__title {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.1px;
@@ -45,13 +45,13 @@
   text-align: center;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.clients-item {
+.clients__item {
   border-radius: 4px;
   width: 170px;
   height: 90px;
@@ -98,7 +98,7 @@
 }
   
 
-  .team-subtitle {
+  .team__subtitle {
 
   &__subtitle {
     color: var(--secondary-color);
@@ -122,7 +122,7 @@
 
   
 
-  .soc-item {
+  .soc__item {
     width: 44px;
     display: flex;
     justify-content: center;

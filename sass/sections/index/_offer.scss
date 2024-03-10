@@ -63,6 +63,20 @@
 @keyframes offer-move {
   0% {
     transform: translate(1200px, -390px);
+<<<<<<< HEAD
+=======
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes offer-button-move {
+  0% {
+    transform: translate(-1200px, -390px);
+>>>>>>> 520b0c2b4721414abb59c0900a70ec9eaf8b0395
     opacity: 0;
   }
   100% {

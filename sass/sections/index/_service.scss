@@ -1,5 +1,5 @@
 
-.service-bg {
+.service__bg {
   position: absolute;
 
 .service {
@@ -48,11 +48,11 @@
   width: 370px;
 }
 
-.service-item:nth-child(2) .service-bg {
+.service__item:nth-child(2) .service__bg {
   padding: 27px 111px;
 }
 
-.service-item:nth-child(3) .service-bg {
+.service__item:nth-child(3) .service__bg {
   padding: 27px 93px;
 }
 
@@ -61,12 +61,12 @@
   padding-bottom: 94px;
 }
 
-.service-list {
+.service__list {
   display: flex;
   gap: 30px;
 }
 
-.service-title {
+.service__title {
   font-weight: 700;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
@@ -75,7 +75,7 @@
   font-size: 36px;
 }
 
-.service-subtitle {
+.service__subtitle {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -84,12 +84,12 @@
 
 }
 
-.service-image {
+.service__image {
   width: 370px;
   height: 294px;
 }
 
-.service-item {
+.service__item {
   position: relative;
 }
 

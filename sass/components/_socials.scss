@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.soc__item:focus_within .soc__icon {
+.soc__item:focus__within .soc__icon {
   fill: $white-color; 
 }
 
@@ -43,7 +43,7 @@
   fill: $white-color; 
 }
 
-.soc__item:focus_within {
+.soc__item:focus__within {
   background-color: $highlight-color;
   outline: none;
 }

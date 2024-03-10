@@ -25,7 +25,7 @@
       <div class="container">
         <div class="header__wrap">
           <a href="./index.html" class="header__logo1"
-            >Web<span class="header-logo2">Studio</span></a
+            >Web<span class="header__logo2">Studio</span></a
           >
           <ul class="header__list">
             <li class="header__item">
@@ -48,7 +48,7 @@
               </svg>
             </li>
             <li class="header__infoitem">
-              <a class="header-info" href="tel:+380961111111"
+              <a class="header__info" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
               <svg class="header__icon">
@@ -142,7 +142,7 @@
                 <h3 class="service__subtitle">Десктопні додатки</h3>
               </div>
             </li>
-            <li class="service__item" data-aos="fade-down">
+            <li class="service__item"data-aos="fade-down">
               <img class="service__image" src="./images/work2.webp" alt="img" />
               <div class="service__bg">
                 <h3 class="service__subtitle">Мобільні додатки</h3>
@@ -164,7 +164,7 @@
             <li class="team__item" data-aos="fade-up-left">
               <img class="team__img" src="./images/igor.webp" alt="human" />
               <div class="team__wrap">
-                <h3 class="teammate">Ігор Дем'яненко</h3>
+                <h3 class="team__mate">Ігор Дем'яненко</h3>
                 <h3 class="team__subtitle">Product Designer</h3>
               </div>
               <ul class="soc__list">
@@ -205,7 +205,7 @@
                   <a
                     href="https://linkedin.com/"
                     target="_blank"
-                    class="soc-link"
+                    class="soc__link"
                   >
                     <svg class="soc__icon">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -214,10 +214,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item"  data-aos="fade-down-right">
+            <li class="team__item" data-aos="fade-down-right">
               <img class="team__img" src="./images/olga.webp" alt="human" />
               <div class="team__wrap">
-                <h3 class="teammate">Ольга Рєпіна</h3>
+                <h3 class="team__mate">Ольга Рєпіна</h3>
                 <h3 class="team__subtitle">Frontend Developer</h3>
               </div>
               <ul class="soc__list">
@@ -270,7 +270,7 @@
             <li class="team__item" data-aos="fade-down-left">
               <img class="team__img" src="./images/mikola.webp" alt="human" />
               <div class="team__wrap">
-                <h3 class="teammate">Микола Тарасов</h3>
+                <h3 class="team__mate">Микола Тарасов</h3>
                 <h3 class="team__subtitle">Marketing</h3>
               </div>
               <ul class="soc__list">
@@ -323,7 +323,7 @@
             <li class="team__item" data-aos="flip-left">
               <img class="team__img" src="./images/mihailo.webp" alt="human" />
               <div class="team__wrap">
-                <h3 class="teammate">Михайло Єрмаков</h3>
+                <h3 class="team__mate">Михайло Єрмаков</h3>
                 <h3 class="team__subtitle">UI Designer</h3>
               </div>
               <ul class="soc__list">
@@ -379,44 +379,44 @@
       <section class="clients">
         <h2 class="clients__title" data-aos="zoom-in-down">Постійні клієнти</h2>
         <ul class="clients__list">
-          <li class="clients__item" data-aos="zoom-in-down">
-            <a href="" class="company__link">
-              <svg class="company__logo">
+          <li class="clients__item" data-aos="flip-right" data-aos="zoom-in-down">
+            <a href="" class="clients__link">
+              <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_1"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item" data-aos="zoom-in-down">
-            <a href="" class="company__link">
-              <svg class="company__logo">
+          <li class="clients__item" data-aos="flip-right" data-aos="zoom-in-down">
+            <a href="" class="clients__link">
+              <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_2"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item" data-aos="zoom-in-down">
-            <a href="" class="companyvlink">
-              <svg class="companyvlogo">
+          <li class="clients__item" data-aos="flip-right" data-aos="zoom-in-down">
+            <a href="" class="clients__link">
+              <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_3"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="company__link" data-aos="zoom-in-down">
-              <svg class="company__logo">
+            <a href="" class="clients__link" data-aos="flip-left" data-aos="zoom-in-down">
+              <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_4"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="company__link" data-aos="zoom-in-down">
-              <svg class="company__logo">
+            <a href="" class="clients__link" data-aos="flip-left" data-aos="zoom-in-down">
+              <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_5"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="company__link" data-aos="zoom-in-down">
-              <svg class="company__logo">
+            <a href="" class="clients__link" data-aos="flip-left" data-aos="zoom-in-down">
+              <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_6"></use>
               </svg>
             </a>
@@ -426,8 +426,8 @@
     </main>
     <footer id="contacts" class="footer">
       <div class="container footer__wrap">
-        <div class="footer__contcts" data-aos="fade-up"  data-aos-duration="3000">>
-          <a href="index.html" class="footer-logo1"
+        <div class="footer__contcts" data-aos="fade-right">
+          <a href="index.html" class="footer__logo1"
             >Web<span class="footer__logo2">Studio</span></a
           >
           <address class="footer__address">
@@ -446,7 +446,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__soc"data-aos="zoom-out-right">
+        <div class="footer__soc" data-aos="fade-up">
           <h4 class="footer__title">приєднуйтесь</h4>
           <ul class="soc__list">
             <li class="soc__item footer__soc__item">
@@ -483,18 +483,18 @@
             </li>
           </ul>
         </div>
-        <div class="footervsubscribe" data-aos="fade-left">
+        <div class="footer__subscribe" data-aos="fade-left">
           <h4 class="footer__title">Підпишіться на розсилку</h4>
           <form action="" class="footer__form">
             <input type="email" class="footer__input" placeholder="E-mail" required>
-            <button class="footer__btn">Підписатися <svg class="subscribe__icon" width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg></button>
+            <button class="footer__btn">Підписатися <svg class="footer__subscribe__icon" width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg></button>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is__hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close__circle" data-modal-close>
+        <button type="button" class="modal__circle" data-modal-close>
           <svg class="modal__close" width="18px" height="18px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -540,7 +540,7 @@
             <input
               type="checkbox"
               class="modal__checkbox"
-              id="modal-checkbox"
+              id="modal__checkbox"
               required
             />
             <p class="modal__text">
@@ -552,8 +552,8 @@
         </form>
       </div>
     </div>
-    <a href="#top" class="scroll__to__top">
-      <svg class="modal__close" width="21.68px" height="30.91px">
+    <a href="#top" class="scrolltop">
+      <svg class="scrolltop__icon" width="21.68px" height="30.91px">
         <use href="./images/icons.svg#icon-arrow"></use>
       </svg>
     </a>

@@ -76,8 +76,8 @@
     50% {
 
       transform: translate(-500px, 40px);
-      background: var(--highlight-color);
-      color: var(--white-color);
+      background: $highlight-color;
+      color: $white-color;
       opacity: 0.5;
 
       transform: translate(-400px, 30px);
@@ -100,8 +100,8 @@
     50% {
 
       transform: translate(300px, -420px) rotate(360deg);
-      background: var(--highlight-color);
-      color: var(--white-color);
+      background: $highlight-color;
+      color: $white-color;
       opacity: 0.5;
 
       transform: translate(100px, -120px) rotate(180deg);
@@ -123,9 +123,9 @@
     50% {
 
       transform: translate(600px, -50px) rotate(450deg);
-      background: var(--highlight-color);
+      background: $highlight-color;
       opacity: 0.5;
-      color: var(--white-color);
+      color: $white-color;
 
       transform: translate(500px, -60px) rotate(450deg);
       background: $highlight-color;
@@ -145,8 +145,8 @@
     }
     50% {
       transform: translate(-400px, 0);
-      background: var(--highlight-color);
-      color: var(--white-color);
+      background: $highlight-color;
+      color: $white-color;
       opacity: 0.5;
       transform: translate(-200px, 0);
       background: $highlight-color;
@@ -167,9 +167,9 @@
     50% {
 
       transform: translate(400px, 0) rotate(190deg);
-      background: var(--highlight-color);
+      background: $highlight-color;
       opacity: 0.5;
-      color: var(--white-color);
+      color: $white-color;
 
       transform: translate(200px, 0) rotate(90deg);
       background: $highlight-color;

@@ -48,7 +48,7 @@
   }
 }
 
-@keyframes offer-bg {
+@keyframes offer__bg {
   0% {
     opacity: 0;
   }
@@ -57,7 +57,7 @@
   }
 }
 
-@keyframes offer-move {
+@keyframes offer__move {
   0% {
     transform: translate(1200px, -450px);
     opacity: 0;
@@ -68,7 +68,7 @@
   }
 }
 
-@keyframes offer-button-move {
+@keyframes offer__button__move {
   0% {
     transform: translate(-2100px, -450px);
     opacity: 0;

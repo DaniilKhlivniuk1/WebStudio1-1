@@ -161,7 +161,7 @@ body {
   fill: rgb(33, 150, 243);
 }
 
-@keyframes header-move {
+@keyframes header__move {
   0% {
     transform: translate(0, -200px);
   }
@@ -197,7 +197,7 @@ body {
   border: none;
   outline: none;
 }
-.scrolltop:focus-visible .modal-close {
+.scrolltop:focus-visible .modal__close {
   fill: rgb(255, 255, 255);
 }
 
@@ -210,7 +210,7 @@ body {
   transition: fill var(--st-animation);
 }
 
-@keyframes scroll-to-top-move {
+@keyframes scroll__to__top__move {
   0% {
     bottom: -85px;
     background-color: rgb(33, 150, 243);
@@ -369,7 +369,7 @@ body {
   outline: none;
 }
 
-@keyframes filters-move-1 {
+@keyframes filters__move__1 {
   0% {
     transform: translate(-1000px, -300px) rotate(720deg);
   }
@@ -382,7 +382,7 @@ body {
     transform: translate(0);
   }
 }
-@keyframes filters-move-2 {
+@keyframes filters__move__2 {
   0% {
     transform: translate(100px, -500px) rotate(360deg);
   }
@@ -395,7 +395,7 @@ body {
     transform: translate(0);
   }
 }
-@keyframes filters-move-3 {
+@keyframes filters__move__3 {
   0% {
     transform: translate(1500px, 500px) rotate(1080deg);
   }
@@ -408,7 +408,7 @@ body {
     transform: translate(0);
   }
 }
-@keyframes filters-move-4 {
+@keyframes filters__move__4 {
   0% {
     transform: translate(-1500px, 0);
   }
@@ -421,7 +421,7 @@ body {
     transform: translate(0);
   }
 }
-@keyframes filters-move-5 {
+@keyframes filters__move__5 {
   0% {
     transform: translate(1500px, 0) rotate(450deg);
   }

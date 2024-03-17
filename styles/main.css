@@ -161,7 +161,7 @@ body {
   fill: rgb(33, 150, 243);
 }
 
-@keyframes header-move {
+@keyframes header__move {
   0% {
     transform: translate(0, -200px);
   }
@@ -197,7 +197,7 @@ body {
   border: none;
   outline: none;
 }
-.scrolltop:focus-visible .modal-close {
+.scrolltop:focus-visible .modal__close {
   fill: rgb(255, 255, 255);
 }
 
@@ -210,7 +210,7 @@ body {
   transition: fill var(--st-animation);
 }
 
-@keyframes scroll-to-top-move {
+@keyframes scroll__to__top__move {
   0% {
     bottom: -85px;
     background-color: rgb(33, 150, 243);
@@ -315,7 +315,7 @@ body {
   animation-duration: 1.6s;
 }
 
-@keyframes offer-bg {
+@keyframes offer__bg {
   0% {
     opacity: 0;
   }
@@ -323,7 +323,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes offer-move {
+@keyframes offer__move {
   0% {
     transform: translate(1100px, -350px);
     opacity: 0;
@@ -333,7 +333,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes offer-button-move {
+@keyframes offer__button__move {
   0% {
     transform: translate(-1100px, -350px);
     opacity: 0;
@@ -759,12 +759,12 @@ body {
   left: 12px;
 }
 
-.is-hidden .modal {
+.is__hidden .modal {
   /* transform: translate(0); */
   transform: rotate(720deg) scale(15);
 }
 
-.is-hidden {
+.is__hidden {
   opacity: 0;
   pointer-events: none;
   /* visibility: hidden; */

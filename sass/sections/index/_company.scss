@@ -29,6 +29,7 @@
     height: 92px;
     transition: border $st-animation;
 
+<<<<<<< HEAD
     &:hover {
       border: 1px solid $highlight-color;
     }
@@ -37,6 +38,23 @@
       border: 1px solid $highlight-color;
       outline: none;
     }
+=======
+  .company__logo:hover {
+    fill: $highlight-color;
+  }
+  
+  
+  .company__link:focus{
+    outline: none;
+  }
+  
+  
+  .company__logo {
+    fill: rgba(175, 177, 184, 1);
+    transition: fill $st-animation;
+    width: 170px;
+    height: 92px;
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a
   }
 
   &__logo {

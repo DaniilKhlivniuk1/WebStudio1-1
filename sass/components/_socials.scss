@@ -26,8 +26,13 @@
   outline: none;
 }
 
+<<<<<<< HEAD
 .soc__item:focus-within .soc__icon {
   fill: $white-color;
+=======
+.soc__item:focus__within .soc__icon {
+  fill: $white-color; 
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a
 }
 
 .soc__item:focus {
@@ -43,5 +48,33 @@
   width: 20px;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
-  transition: fill $st-animation;
+  transition: $st-animation;
 }
+<<<<<<< HEAD
+=======
+.soc__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color $st-animation;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.soc__item:hover {
+  background-color: $highlight-color;
+}
+
+.soc__item:hover .soc__icon {
+  fill: $white-color; 
+}
+
+.soc__item:focus__within {
+  background-color: $highlight-color;
+  outline: none;
+}
+
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a

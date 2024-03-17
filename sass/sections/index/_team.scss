@@ -1,3 +1,66 @@
+<<<<<<< HEAD
+=======
+
+.soc__item:hover {
+  background-color: $highlight-color;
+}
+
+.soc__item:hover .soc__icon {
+  fill: $white-color; 
+}
+
+.soc__item:focus__within {
+  background-color: $highlight-color;
+  outline: none;
+}
+
+.soc__item:focus__within .soc__icon {
+  fill: $white-color; 
+}
+
+.soc__item:focus {
+  outline: none;
+}
+
+.soc__link {
+  width: 20px;
+  height: 20px;
+}
+
+.soc__icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill $st-animation;
+}
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients__title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  margin-bottom: 50px;
+  color: $text-color;
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients__item {
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a
 .team {
   padding: 94px 0;
   background-color: rgba(245, 244, 250, 1);
@@ -8,9 +71,13 @@
   }
 
   &__title {
+<<<<<<< HEAD
     color: var(--text-color);
     text-align: center;
     font-size: 36px;
+=======
+    color: $text-color;
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
@@ -21,7 +88,7 @@
   }
 
   &__mate {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -29,19 +96,53 @@
   }
 
   &__item {
-    background-color: var(--white-color);
+    background-color: $white-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+}
+  
+
+  .team__subtitle {
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a
 
   &__subtitle {
-    color: var(--secondary-color);
+    color: $secondary-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
     margin-top: 10px;
+<<<<<<< HEAD
   }
 }
+=======
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+  
+
+
+
+
+
+
+
+  
+
+  .soc__item {
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $st-animation;
+    height: 44px;
+    border-radius: 50%;
+  }
+  
+>>>>>>> 02d2e1a0595f0c87f628bcc3a56375257440335a

@@ -67,10 +67,7 @@
     flex-direction: row-reverse;
     transition: fill $st-animation;
 
-    @media  screen and (min-width: 1600px) {
-       padding-top: 8px;
-     }
-  }
+
 
   &__infoitem:hover &__icon {
     fill: $highlight-color;

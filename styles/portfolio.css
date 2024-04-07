@@ -47,7 +47,7 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: dotted rgb(202, 228, 8);
+    outline: dotted rgb(25, 0, 255);
   }
 }
 

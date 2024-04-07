@@ -41,13 +41,13 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    outline: dotted green;
+    outline: dotted rgb(0, 89, 255); 
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: dotted rgb(25, 0, 255);
+    outline: dotted rgb(255, 0, 200);
   }
 }
 

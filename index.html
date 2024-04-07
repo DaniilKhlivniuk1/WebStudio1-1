@@ -27,7 +27,9 @@
           <a href="./index.html" class="header__logo1"
             >Web<span class="header__logo2">Studio</span></a
           >
-
+          <svg class="header__menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
           <ul class="header__list">
             <li class="header__item">
               <a href="./index.html" class="header__link">Студія</a>
@@ -71,7 +73,7 @@
         <div class="container">
           <h2 hidden>Особливості</h2>
           <ul class="features__list">
-            <li class="features__item" data-aos="fade-up-right">
+            <li class="features__item" data-aos="fade-down">
               <article class="features__article">
                 <div class="features__wrap">
                   <svg class="features__icon">
@@ -85,7 +87,7 @@
                 </p>
               </article>
             </li>
-            <li class="features__item" data-aos="fade-up">
+            <li class="features__item" data-aos="fade-up-right">
               <article class="features__article">
                 <div class="features__wrap">
                   <svg class="features__icon">
@@ -100,7 +102,7 @@
                 </p>
               </article>
             </li>
-            <li class="features__item" data-aos="fade-up">
+            <li class="features__item" data-aos="fade-down-right">
               <article class="features__article">
                 <div class="features__wrap">
                   <svg class="features__icon">
@@ -115,7 +117,7 @@
                 </p>
               </article>
             </li>
-            <li class="features__item" data-aos="fade-up-left">
+            <li class="features__item" data-aos="fade-down-left">
               <article class="features__article">
                 <div class="features__wrap">
                   <svg class="features__icon">
@@ -135,21 +137,21 @@
       </section>
       <section class="service">
         <div class="container">
-          <h2 class="service__title" data-aos="fade-down">Чим ми займаємося</h2>
+          <h2 class="service__title" data-aos="flip-left">Чим ми займаємося</h2>
           <ul class="service__list">
-            <li class="service__item" data-aos="zoom-out-right">
+            <li class="service__item" data-aos="flip-right">
               <img class="service__image" src="./images/work1.webp" alt="img" />
               <div class="service__bg">
                 <h3 class="service__subtitle">Десктопні додатки</h3>
               </div>
             </li>
-            <li class="service__item"data-aos="zoom-out">
+            <li class="service__item" data-aos="flip-up">
               <img class="service__image" src="./images/work2.webp" alt="img" />
               <div class="service__bg">
                 <h3 class="service__subtitle">Мобільні додатки</h3>
               </div>
             </li>
-            <li class="service__item" data-aos="zoom-out-left">
+            <li class="service__item" data-aos="flip-down"">
               <img class="service__image" src="./images/work3.webp" alt="img" />
               <div class="service__bg">
                 <h3 class="service__subtitle">Дизайнерські рішення</h3>
@@ -160,10 +162,12 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team__title" data-aos="fade-down" data-aos-duration="1000">Наша команда</h2>
+          <h2 class="team__title" data-aos="zoom-in">Наша команда</h2>
           <ul class="team__list">
-            <li class="team__item" data-aos="fade-up-right" data-aos-duration="1300">
-              <img class="team__img" src="./images/igor.webp" alt="human" />
+            <li class="team__item" data-aos="zoom-in-up">
+              <div class="team__photo">
+                 <img class="team__img" src="./images/igor.webp" alt="human" />
+              </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Ігор Дем'яненко</h3>
                 <h3 class="team__subtitle">Product Designer</h3>
@@ -215,8 +219,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item" data-aos="fade-down-right" data-aos-duration="1300">
+            <li class="team__item" data-aos="zoom-in-left">
+              <div class="team__photo">
               <img class="team__img" src="./images/olga.webp" alt="human" />
+              </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Ольга Рєпіна</h3>
                 <h3 class="team__subtitle">Frontend Developer</h3>
@@ -268,8 +274,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item" data-aos="fade-down-left" data-aos-duration="1300">
+            <li class="team__item" data-aos="zoom-out-up">
+              <div class="team__photo">
               <img class="team__img" src="./images/mikola.webp" alt="human" />
+              </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Микола Тарасов</h3>
                 <h3 class="team__subtitle">Marketing</h3>
@@ -321,8 +329,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item" data-aos="fade-up-left" data-aos-duration="1300">
+            <li class="team__item" data-aos="zoom-out-right">
+              <div class="team__photo">
               <img class="team__img" src="./images/mihailo.webp" alt="human" />
+              </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Михайло Єрмаков</h3>
                 <h3 class="team__subtitle">UI Designer</h3>
@@ -378,23 +388,23 @@
         </div>
       </section>
       <section class="clients">
-        <h2 class="clients__title" data-aos="flip-up" data-aos-duration="1500">Постійні клієнти</h2>
+        <h2 class="clients__title" data-aos="zoom-out-left">Постійні клієнти</h2>
         <ul class="clients__list">
-          <li class="clients__item" data-aos="flip-right" data-aos-duration="1500">
+          <li class="clients__item" data-aos="fade-up" data-aos-duration="3000">
             <a href="" class="clients__link">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_1"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item" data-aos="flip-right" data-aos-duration="1500">
+          <li class="clients__item" data-aos="fade-down-left">
             <a href="" class="clients__link">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_2"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item" data-aos="flip-right" data-aos-duration="1500">
+          <li class="clients__item" data-aos="fade-up-left">
             <a href="" class="clients__link">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_3"></use>
@@ -402,21 +412,21 @@
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="clients__link" data-aos="flip-left" data-aos-duration="1500">
+            <a href="" class="clients__link" data-aos="fade-up-right">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_4"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="clients__link" data-aos="flip-left" data-aos-duration="1500">
+            <a href="" class="clients__link" data-aos="fade-left">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_5"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="clients__link" data-aos="flip-left" data-aos-duration="1500">
+            <a href="" class="clients__link" data-aos="fade-right">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_6"></use>
               </svg>
@@ -425,7 +435,7 @@
         </ul>
       </section>
     </main>
-    <footer id="contacts" class="footer">
+    <!-- <footer id="contacts" class="footer">
       <div class="container footer__wrap">
         <div class="footer__contcts" data-aos="fade-right">
           <a href="index.html" class="footer__logo1"
@@ -456,28 +466,28 @@
                 target="_blank"
                 class="soc__link"
               >
-                <svg class="soc__icon footer__soc__icon">
+                <svg class="soc__icon footer__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc__item">
               <a href="https://twitter.com/" target="_blank" class="soc__link">
-                <svg class="soc__icon footer__soc__icon">
+                <svg class="soc__icon footer__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="soc__item">
               <a href="https://facebook.com/" target="_blank" class="soc__link">
-                <svg class="soc__icon footer__soc__icon">
+                <svg class="soc__icon footer__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="soc__item">
               <a href="https://linkedin.com/" target="_blank" class="soc__link">
-                <svg class="soc__icon footer__soc__icon">
+                <svg class="soc__icon footer__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -492,8 +502,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__circle" data-modal-close>
           <svg class="modal__close" width="18px" height="18px">
@@ -552,12 +562,12 @@
           <button class="modal__btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
-    <a href="#top" class="scrolltop">
+    </div> -->
+    <!-- <a href="#top" class="scrolltop">
       <svg class="scrolltop__icon" width="21.68px" height="30.91px">
         <use href="./images/icons.svg#icon-arrow"></use>
       </svg>
-    </a>
+    </a> -->
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

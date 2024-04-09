@@ -20,9 +20,23 @@
     letter-spacing: 1.08px;
     margin-bottom: 4px;
   }
-  &__img {
-    width: 370px;
+  &__photo {
     height: 294px;
+    width: 450px;
+    
+    @media  screen and (max-width: 480px) {
+      width: 100%;
+      height: auto;
+    }
+    
+    @media  screen and (min-width: 768px) {
+      width: 354px;
+      height: 281px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      width: 370px;
+     }
   }
 
   &__article {
@@ -44,7 +58,24 @@
   }
 
   &__item {
+
+    @media  screen and (max-width: 480px) {
+      width: 100%;
+    }
+
+
+    @media  screen and (min-width: 768px) {
+
+
+      max-width: 354px;
+
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      max-width: none;
     flex-basis: calc((100% - 60px) \3);
+
+     }
   }
 
   &__description {
@@ -61,7 +92,20 @@
     font-weight: 400;
     line-height: 155.556%;
     letter-spacing: 0.54px;
-    max-width: 322px;
+    max-width: 402px;
+
+    @media  screen and (max-width: 480px) {
+      font-size: 14px;
+      max-width: 206px;
+    }
+
+    @media  screen and (min-width: 768px) {
+      max-width: 306px;
+     }
+
+     @media  screen and (min-width: 1200px) {
+      max-width: 322px;
+     }
   }
 
   &__hover-position {
@@ -73,17 +117,32 @@
     top: 294px;
     left: 0;
     position: absolute;
-    width: 370px;
+   
     height: 294px;
+    width: 450px;
     background: rgba(33, 150, 243, 0.9);
     @include flexbox;
-    /* opacity: 0; */
+
     transition: transform $st-animation;
+
+    @media  screen and (max-width: 480px) {
+      top: 360px;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media  screen and (min-width: 768px) {
+ width: 370px;
+     }
   }
 
   &__link:hover &__hover {
     /* opacity: 1; */
     transform: translate(0, -294px);
+
+    @media  screen and (max-width: 480px) {
+      transform: translate(0, -360px);
+    }
   }
 
   &__link:focus &__hover {

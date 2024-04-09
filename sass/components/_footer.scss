@@ -129,6 +129,11 @@
     color: $white-color;
     transition: border-color $st-animation;
 
+    @media  screen and (max-width: 480px) {
+      width: 100%;
+    }
+
+
     @media  screen and (min-width: 1200px) {
       width: 358px;
      }

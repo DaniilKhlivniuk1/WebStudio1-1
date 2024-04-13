@@ -189,13 +189,13 @@
   }
 }
 
-
 @keyframes header-move {
   0% {
     transform: translate(0, -250px);
+    opacity: 0;
   }
   100% {
     transform: translate(0);
+    opacity: 1;
   }
 }
-

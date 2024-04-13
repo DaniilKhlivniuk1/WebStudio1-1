@@ -32,29 +32,30 @@ img {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    max-width: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
+    max-width: none;
     width: 1200px;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto";
-  overflow: hidden;
 }
 
 main {
@@ -270,9 +271,11 @@ main {
 @keyframes header-move {
   0% {
     transform: translate(0, -250px);
+    opacity: 0;
   }
   100% {
     transform: translate(0);
+    opacity: 1;
   }
 }
 .scrolltop {
@@ -318,11 +321,11 @@ main {
 
 @keyframes scroll-to-top-move {
   0% {
-    bottom: -95px;
+    bottom: -90px;
     background-color: rgb(33, 150, 243);
   }
   100% {
-    bottom: 25px;
+    bottom: 30px;
   }
 }
 .soc__list {
@@ -711,14 +714,16 @@ main {
 .clients__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
   margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 0.84px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    letter-spacing: 1.08px;
+    font-size: 36px;
   }
 }
 .clients__list {

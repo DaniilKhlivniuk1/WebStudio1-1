@@ -1,8 +1,7 @@
 .footer {
   padding: 60px 0;
   background-color: $background-color;
-  overflow: hidden;
-
+overflow: hidden;
 
   &__icon {
     fill: $white-color;
@@ -44,7 +43,6 @@
      }
   }
 
-
   &__address {
     color: $white-color;
     @extend %small_text;
@@ -67,6 +65,7 @@
     line-height: 171.429%;
     letter-spacing: 0.42px;
     transition: color $st-animation;
+
     &:hover {
       color: $highlight-color;
     }
@@ -86,7 +85,7 @@
     margin-bottom: 20px;
 
     @media  screen and (min-width: 1200px) {
-    text-align: left;
+text-align: left;
      }
   }
 
@@ -133,11 +132,11 @@
       width: 100%;
     }
 
-
     @media  screen and (min-width: 1200px) {
       width: 358px;
      }
   }
+
   &__input:hover {
     border-color: $highlight-color;
   }

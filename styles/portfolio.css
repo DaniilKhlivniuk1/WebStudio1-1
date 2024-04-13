@@ -32,29 +32,30 @@ img {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    max-width: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
+    max-width: none;
     width: 1200px;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto";
-  overflow: hidden;
 }
 
 main {
@@ -270,9 +271,11 @@ main {
 @keyframes header-move {
   0% {
     transform: translate(0, -250px);
+    opacity: 0;
   }
   100% {
     transform: translate(0);
+    opacity: 1;
   }
 }
 .scrolltop {
@@ -318,11 +321,11 @@ main {
 
 @keyframes scroll-to-top-move {
   0% {
-    bottom: -95px;
+    bottom: -90px;
     background-color: rgb(33, 150, 243);
   }
   100% {
-    bottom: 25px;
+    bottom: 30px;
   }
 }
 .soc__list {
@@ -466,14 +469,35 @@ main {
 
 .filters {
   border-top: solid rgb(236, 236, 236) 1px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 .filters__list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: none;
+  justify-content: none;
   gap: 8px;
+  flex-wrap: wrap;
+  max-width: 326px;
+}
+@media screen and (min-width: 768px) {
+  .filters__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+  }
 }
 .filters__item:nth-child(1) .filters__button {
   animation-name: filters-move-1;
@@ -601,10 +625,20 @@ main {
   padding: 20px 24px;
   border: 1px solid #eee;
 }
+@media screen and (min-width: 768px) {
+  .projects__item:first-child .projects__wrap {
+    padding-bottom: 54px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item:first-child .projects__wrap {
+    padding-bottom: 20px;
+  }
+}
 .projects__list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: none;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -725,7 +759,6 @@ main {
   }
 }
 .projects__link:hover .projects__hover {
-  /* opacity: 1; */
   transform: translate(0, -294px);
 }
 @media screen and (max-width: 480px) {

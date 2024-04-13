@@ -12,7 +12,6 @@
     padding-bottom: 25px;
    }
 
-<<<<<<< HEAD
   &__menu {
     width: 40px;
     height: 40px;
@@ -33,12 +32,6 @@
     //   @include flexbox($justify: center);
     //  }
   
-=======
-  &__wrap {
-    @include flexbox($justify: space-between);
-
-
->>>>>>> c5edfdd2a112d45b0b33d5dcb27f23134c321fad
      @media  screen and (min-width: 1200px) {
       @include flexbox($justify: center);
      }
@@ -89,12 +82,7 @@
     gap: 10px;
     flex-direction: row-reverse;
     transition: fill $st-animation;
-<<<<<<< HEAD
   }
-=======
-
-
->>>>>>> c5edfdd2a112d45b0b33d5dcb27f23134c321fad
 
   &__infoitem:hover &__icon {
     fill: $highlight-color;
@@ -201,11 +189,13 @@
   }
 }
 
+
 @keyframes header-move {
   0% {
-    transform: translate(0, -200px);
+    transform: translate(0, -250px);
   }
   100% {
     transform: translate(0);
   }
 }
+

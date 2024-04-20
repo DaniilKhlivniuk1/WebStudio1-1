@@ -63,6 +63,11 @@ main {
 }
 
 .header {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
   padding: 10px 0;
   animation-name: header-move;
   animation-duration: 1s;
@@ -78,16 +83,22 @@ main {
     padding-bottom: 25px;
   }
 }
+.header__button {
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
 .header__menu {
   width: 40px;
   height: 40px;
 }
 @media screen and (min-width: 768px) {
-  .header__menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
   .header__menu {
     display: none;
   }
@@ -978,4 +989,93 @@ main {
 }
 .footer__subscribe__icon {
   fill: rgb(255, 255, 255);
+}
+
+.menu {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: none;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 48px 0 48px 40px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__button {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.menu__icon {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
+}
+.menu__link {
+  color: #212121;
+  font-size: 40px;
+}
+.menu__link:hover {
+  color: rgb(33, 150, 243);
+}
+.menu__wrap {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  flex-direction: column;
+}
+.menu__tel {
+  color: rgb(33, 150, 243);
+  font-size: 34px;
+  font-weight: 500;
+}
+@media screen and (max-width: 360px) {
+  .menu__tel {
+    font-size: 30px;
+  }
+}
+.menu__mail {
+  color: rgb(117, 117, 117);
+  font-size: 24px;
+  font-weight: 500;
+}
+.menu__soc {
+  color: rgb(33, 150, 243);
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu__list {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  flex-direction: column;
+  gap: 34px;
+}
+.menu__rectangle {
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+}
+.menu__socials {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.menu__active {
+  color: rgb(33, 150, 243);
+}
+
+.is-hidden {
+  opacity: 0;
+  z-index: -2;
 }/*# sourceMappingURL=portfolio.css.map */

@@ -341,7 +341,9 @@ main {
 }
 
 .offer {
+  margin-top: 60px;
   max-width: 480px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/offer@1-desktop.webp);
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
@@ -350,33 +352,24 @@ main {
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/mobile/offerbg@1-mobile.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .offer {
-    background-image: url(../images/mobile/offerbg@2-mobile.webp);
+    background-image: url(../../../images/desktop/offer@2-desktop.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .offer {
+    margin-top: 80px;
     max-width: 768px;
-    background-image: url(../images/tablet/offerbg@1-tablet.webp);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .offer {
-    background-image: url(../images/tablet/offerbg@2-tablet.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-tb.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .offer {
     max-width: 1600px;
-    background-image: url(../images/desktop/offerbg@1-desktop.webp);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .offer {
-    background-image: url(../images/desktop/offerbg@2-desktop.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-ds.webp);
+    padding: 200px 0;
   }
 }
 .offer__title {

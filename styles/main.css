@@ -63,6 +63,7 @@ main {
 }
 
 .header {
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -495,7 +496,7 @@ main {
 .offer {
   margin-top: 60px;
   max-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/offerbg@1-mobile.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mobile-offer@1x.webp);
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
@@ -508,31 +509,31 @@ main {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .offer {
-    background-image: url(../images/mobile/offerbg@2-mobile.webp);
+    background-image: url(../images/mobile/mobile-offer@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .offer {
     margin-top: 80px;
     max-width: 768px;
-    background-image: url(../images/tablet/offerbg@1-tablet.webp);
+    background-image: url(../images/tablet/tablet-offer@1x.webp);
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url(../images/tablet/offerbg@1-tablet.webp);
+    background-image: url(../images/tablet/tablet-offer@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .offer {
     max-width: 1600px;
     padding: 200px 0;
-    background-image: url(../images/desktop/offer@1-desktop.webp);
+    background-image: url(../images/desktop/desktop-offer@1x.webp);
   }
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url(../images/desktop/offer@2-desktop.webp);
+    background-image: url(../images/desktop/desktop-offer@2x.webp);
   }
 }
 .offer__title {
@@ -592,7 +593,7 @@ main {
 }
 @keyframes offer-move {
   0% {
-    transform: translate(1500px, -550px);
+    transform: translate(1100px, -350px);
     opacity: 0;
   }
   100% {
@@ -602,7 +603,7 @@ main {
 }
 @keyframes offer-button-move {
   0% {
-    transform: translate(-1500px, -550px);
+    transform: translate(-1100px, -350px);
     opacity: 0;
   }
   100% {
